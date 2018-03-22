@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : multiplier
+Version: C-2009.06-SP5
+Date   : Fri Dec  9 03:30:55 2016
+****************************************
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: opera1[31] (input port)
+  Endpoint: result_reg[45]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock (input port clock) (rise edge)     0.00       0.00
+  input external delay                     0.00       0.00 f
+  opera1[31] (in)                          0.00       0.00 f
+  U2716/Z (CIVX16)                         0.03       0.03 r
+  A2/Z (CTSX2)                             0.22       0.25 r
+  U2795/Z (CIVX2)                          0.08       0.33 f
+  U2796/Z (COR2X1)                         0.24       0.58 f
+  U2703/Z (COAN1X1)                        0.20       0.78 f
+  U2418/Z (CAN2X1)                         0.19       0.97 f
+  U2405/Z (CANR5CX1)                       0.26       1.23 r
+  U2541/Z (CIVX2)                          0.15       1.38 f
+  U2767/Z (COND3X4)                        0.15       1.53 r
+  U2765/Z (CND2X2)                         0.12       1.65 f
+  U2718/Z (CND2IX2)                        0.07       1.72 r
+  U3467/Z (CIVX2)                          0.07       1.79 f
+  U2816/Z (CND2X2)                         0.07       1.86 r
+  U2590/Z (CIVX1)                          0.07       1.94 f
+  U2306/Z (CNR2IX1)                        0.12       2.06 r
+  U3485/Z (COND4CX1)                       0.21       2.27 f
+  U2268/Z (CIVX2)                          0.08       2.35 r
+  U3486/Z (COND1X2)                        0.11       2.46 f
+  U2772/Z (CND2IX2)                        0.10       2.56 r
+  U1964/Z (CIVX2)                          0.07       2.62 f
+  U2177/Z (CNR2IX1)                        0.19       2.82 r
+  U2255/Z (COND1X1)                        0.17       2.99 f
+  U2285/Z (CENX1)                          0.24       3.22 f
+  U3081/Z (COND3X1)                        0.13       3.36 r
+  result_reg[45]/D (CFD1QXL)               0.00       3.36 r
+  data arrival time                                   3.36
+
+  clock clock (rise edge)                  4.00       4.00
+  clock network delay (propagated)         0.00       4.00
+  clock uncertainty                       -0.25       3.75
+  result_reg[45]/CP (CFD1QXL)              0.00       3.75 r
+  library setup time                      -0.39       3.36
+  data required time                                  3.36
+  -----------------------------------------------------------
+  data required time                                  3.36
+  data arrival time                                  -3.36
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

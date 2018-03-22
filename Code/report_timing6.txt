@@ -1,0 +1,179 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : multiplier
+Version: C-2009.06-SP5
+Date   : Fri Dec  9 04:50:52 2016
+****************************************
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: opera1[31] (input port)
+  Endpoint: result_reg[62]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock (input port clock) (rise edge)     0.00       0.00
+  input external delay                     0.00       0.00 r
+  opera1[31] (in)                          0.00       0.00 r
+  U2040/Z (CIVX2)                          0.05       0.05 f
+  U2822/Z (CIVXL)                          0.40       0.46 r
+  U2060/Z (CENX1)                          0.33       0.79 r
+  U2024/Z (CNR2X1)                         0.19       0.98 f
+  U2043/Z (CIVXL)                          0.11       1.09 r
+  U2025/Z (CAN2X1)                         0.26       1.35 r
+  U2044/Z (CIVX2)                          0.08       1.43 f
+  U2342/Z (CANR2X1)                        0.22       1.65 r
+  U2061/Z (CANR5CXL)                       0.36       2.01 f
+  U2244/Z (COND2X1)                        0.32       2.33 r
+  U2343/Z (CANR2X1)                        0.25       2.59 f
+  U2017/Z (COND2X1)                        0.28       2.87 r
+  U2351/Z (CANR2X1)                        0.24       3.11 f
+  U2016/Z (COND2X1)                        0.32       3.42 r
+  U2350/Z (CANR2X1)                        0.25       3.68 f
+  U2045/Z (COND2X1)                        0.27       3.95 r
+  U2344/Z (CANR2X1)                        0.24       4.19 f
+  U2245/Z (COND2X1)                        0.28       4.47 r
+  U2075/Z (CIVX1)                          0.12       4.58 f
+  U2027/Z (COND2X1)                        0.26       4.85 r
+  U1651/Z (CIVX2)                          0.11       4.96 f
+  U2020/Z (COND2X1)                        0.27       5.23 r
+  U2352/Z (CANR2X1)                        0.24       5.47 f
+  U2246/Z (COND2X1)                        0.28       5.74 r
+  U2076/Z (CIVX1)                          0.12       5.86 f
+  U2028/Z (COND2X1)                        0.26       6.12 r
+  U1645/Z (CIVX2)                          0.11       6.23 f
+  U2021/Z (COND2X1)                        0.27       6.50 r
+  U2353/Z (CANR2X1)                        0.24       6.74 f
+  U2247/Z (COND2X1)                        0.28       7.02 r
+  U2079/Z (CIVX1)                          0.12       7.14 f
+  U2030/Z (COND2X1)                        0.26       7.40 r
+  U1639/Z (CIVX2)                          0.11       7.51 f
+  U2022/Z (COND2X1)                        0.27       7.78 r
+  U2354/Z (CANR2X1)                        0.24       8.02 f
+  U2248/Z (COND2X1)                        0.28       8.29 r
+  U2077/Z (CIVX1)                          0.12       8.41 f
+  U2026/Z (COND2X1)                        0.26       8.67 r
+  U1633/Z (CIVX2)                          0.11       8.78 f
+  U2023/Z (COND2X1)                        0.27       9.05 r
+  U2355/Z (CANR2X1)                        0.24       9.29 f
+  U2018/Z (COND2X1)                        0.28       9.57 r
+  U2078/Z (CIVX1)                          0.12       9.69 f
+  U2029/Z (COND2X1)                        0.26       9.95 r
+  U1627/Z (CIVX2)                          0.11      10.06 f
+  U2019/Z (COND2X1)                        0.27      10.33 r
+  U2252/Z (CND2X1)                         0.13      10.46 f
+  U1984/Z (COND3XL)                        0.16      10.62 r
+  U2253/Z (COND1XL)                        0.21      10.84 f
+  U2366/Z (CANR2X1)                        0.19      11.03 r
+  U2364/Z (COND3X1)                        0.21      11.24 f
+  result_reg[62]/D (CFD1QXL)               0.00      11.24 f
+  data arrival time                                  11.24
+
+  clock clock (rise edge)                 12.00      12.00
+  clock network delay (propagated)         0.00      12.00
+  clock uncertainty                       -0.25      11.75
+  result_reg[62]/CP (CFD1QXL)              0.00      11.75 r
+  library setup time                      -0.47      11.28
+  data required time                                 11.28
+  -----------------------------------------------------------
+  data required time                                 11.28
+  data arrival time                                 -11.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.05
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : multiplier
+Version: C-2009.06-SP5
+Date   : Fri Dec  9 18:50:28 2016
+****************************************
+
+Operating Conditions: WCCOM25   Library: tc240c
+Wire Load Model Mode: top
+
+  Startpoint: sign_reg (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: result_reg[63]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  sign_reg/CP (CFD1X1)                     0.00       0.00 r
+  sign_reg/Q (CFD1X1)                      0.45       0.45 r
+  A5/Z (CTSX2)                             0.22       0.67 r
+  U2229/Z (CND2IX2)                        0.11       0.78 f
+  U2796/Z (CIVX2)                          0.06       0.84 r
+  U2062/Z (CND3X2)                         0.12       0.96 f
+  U2877/Z (CIVX2)                          0.09       1.06 r
+  U1948/Z (CND3X1)                         0.16       1.22 f
+  U1933/Z (COR2X1)                         0.27       1.49 f
+  U1971/Z (CND2IX1)                        0.20       1.69 f
+  U2044/Z (CIVX2)                          0.09       1.78 r
+  U2064/Z (CND2X2)                         0.11       1.89 f
+  U2878/Z (CIVX2)                          0.06       1.95 r
+  U1934/Z (CND3XL)                         0.19       2.15 f
+  U1972/Z (COR2X1)                         0.27       2.41 f
+  U2045/Z (CIVX2)                          0.09       2.50 r
+  U2879/Z (CND2X2)                         0.11       2.61 f
+  U2798/Z (CIVX2)                          0.06       2.67 r
+  U2060/Z (CND2IX2)                        0.09       2.76 f
+  U2050/Z (CIVX2)                          0.08       2.84 r
+  U1904/Z (CND3XL)                         0.21       3.05 f
+  U1911/Z (COR2X1)                         0.29       3.34 f
+  U1935/Z (CNR2IX1)                        0.16       3.50 r
+  U1997/Z (CND4X1)                         0.22       3.72 f
+  U1973/Z (COR2X1)                         0.26       3.98 f
+  U1950/Z (CIVX2)                          0.08       4.06 r
+  U1991/Z (CND4X1)                         0.21       4.28 f
+  U1982/Z (COR4X1)                         0.44       4.72 f
+  U1960/Z (CIVX1)                          0.08       4.80 r
+  U1959/Z (CAN4X1)                         0.35       5.15 r
+  U1913/Z (CND2X1)                         0.13       5.28 f
+  U1981/Z (COR2X1)                         0.25       5.53 f
+  U2975/Z (CIVX2)                          0.08       5.60 r
+  U2976/Z (CND2X2)                         0.12       5.72 f
+  U1898/Z (CND2IX1)                        0.20       5.92 f
+  U1906/Z (CNR2IX1)                        0.16       6.09 r
+  U2815/Z (CND2IX2)                        0.14       6.22 f
+  U2812/Z (CIVX2)                          0.06       6.29 r
+  U2008/Z (CND4X1)                         0.21       6.50 f
+  U3007/Z (CIVX2)                          0.08       6.58 r
+  U1942/Z (CND4X1)                         0.24       6.82 f
+  U2197/Z (CIVX2)                          0.09       6.91 r
+  U3009/Z (CND2X2)                         0.10       7.01 f
+  U2825/Z (CENX1)                          0.14       7.15 r
+  U2188/Z (COND1XL)                        0.13       7.28 f
+  result_reg[63]/D (CFD1QXL)               0.00       7.28 f
+  data arrival time                                   7.28
+
+  clock clock (rise edge)                  8.00       8.00
+  clock network delay (propagated)         0.00       8.00
+  clock uncertainty                       -0.25       7.75
+  result_reg[63]/CP (CFD1QXL)              0.00       7.75 r
+  library setup time                      -0.46       7.29
+  data required time                                  7.29
+  -----------------------------------------------------------
+  data required time                                  7.29
+  data arrival time                                  -7.28
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1
